@@ -4,6 +4,8 @@ This has nothing to do with deployments. It just happens to be what I use it for
 
 Read more about my self-hosting here: https://nebezb.com/30gb-ram/
 
+![Demo video](./example/recording.gif)
+
 ## Quick start
 
 Make sure you have `deno` installed.
