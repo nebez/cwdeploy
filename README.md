@@ -38,11 +38,11 @@ This is how I prefer to run it. Deno will cache the script so you'll only downlo
 Setup an alias for it somewhere in your environment (I use [home-manager](https://github.com/nebez/home/blob/92198cfa008ffd9fc06effece11b49e8aa43148b/.config/home-manager/home.nix#L52)) and I recommend you pin a version for stability.
 
 ```sh
-alias cwdeploy=deno run --allow-read --allow-run --allow-env jsr:@nebez/cwdeploy@0.2.0
+alias cwdeploy="deno run --allow-read --allow-run --allow-env jsr:@nebez/cwdeploy@0.2.0"
 
 # or through github
 
-alias cwdeploy=deno run --allow-read --allow-run --allow-env https://raw.githubusercontent.com/nebez/cwdeploy/refs/heads/main/cwdeploy.ts
+alias cwdeploy="deno run --allow-read --allow-run --allow-env https://raw.githubusercontent.com/nebez/cwdeploy/refs/heads/main/cwdeploy.ts"
 ```
 
 **Deno global install**
