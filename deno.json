@@ -1,5 +1,6 @@
 {
   "name": "@nebez/cwdeploy",
+  "description": "Run bash scripts based on cwd",
   "version": "0.2.0",
   "license": "MIT",
   "exports": "./cwdeploy.ts",
