@@ -1,0 +1,9 @@
+{
+  "routes": [
+    {
+      "name": "Example App",
+      "path": "/absolute/path/to/your/app",
+      "script": "./scripts/example-deploy.sh"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "@nebez/cwdeploy",
+  "version": "0.2.0",
+  "license": "MIT",
+  "exports": "./cwdeploy.ts",
+  "tasks": {
+    "cwdeploy": "deno run --allow-read --allow-run --allow-env cwdeploy.ts",
+    "check": "deno check cwdeploy.ts",
+    "test": "deno test --allow-read --allow-write --allow-run --allow-env",
+    "fmt": "deno fmt"
+  }
+}
