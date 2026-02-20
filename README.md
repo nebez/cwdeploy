@@ -6,6 +6,8 @@ Read more about my self-hosting here: https://nebezb.com/30gb-ram/
 
 ## Quick start
 
+Make sure you have `deno` installed.
+
 Create the config `~/.config/cwdeploy/config.json`
 ```json
 {
@@ -21,27 +23,29 @@ Create the config `~/.config/cwdeploy/config.json`
 
 Then cd to `/absolute/path/to/your/app` and run:
 
-```
-deno run --allow-read --allow-run --allow-env jsr:@nebez/cwdeploy@0.1.0
+```sh
+deno run --allow-read --allow-run --allow-env jsr:@nebez/cwdeploy@0.2.0
 ```
 
 ## Install
 
 **Remote run** (preferred)
 
- If you choose to invoke it remotely, I recommend you pin the version for stability. I personally alias it. Deno will cache the script so you'll only download it the first time it's executed. 
+This is how I prefer to run it. Deno will cache the script so you'll only download it the first time it's executed.
 
-```bash
-alias cwdeploy=deno run --allow-read --allow-run --allow-env jsr:@nebez/cwdeploy@0.1.0
+Setup an alias for it somewhere in your environment (I use [home-manager](https://github.com/nebez/home/blob/92198cfa008ffd9fc06effece11b49e8aa43148b/.config/home-manager/home.nix#L52)) and I recommend you pin a version for stability.
 
-# or, through github
+```sh
+alias cwdeploy=deno run --allow-read --allow-run --allow-env jsr:@nebez/cwdeploy@0.2.0
 
-alias cwdeploy=deno run --allow-read --allow-run --allow-env https://raw.githubusercontent.com/nebez/cwdeploy/main/cwdeploy.ts
+# or through github
+
+alias cwdeploy=deno run --allow-read --allow-run --allow-env https://raw.githubusercontent.com/nebez/cwdeploy/refs/heads/main/cwdeploy.ts
 ```
 
 **Deno global install**
 
-If you install it through deno you get versioning/upgrades built-in.
+If you install it through deno you get versioning/upgrades built-in. I haven't tested this.
 
 ```bash
 deno install -f -n cwdeploy --allow-read --allow-run --allow-env jsr:@nebez/cwdeploy
